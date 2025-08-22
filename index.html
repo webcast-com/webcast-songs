@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Music</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="relative min-h-screen bg-gray-900 text-white p-4">
+  <img alt="Abstract music-themed background with dark tones and light effects" class="fixed inset-0 w-full h-full object-cover -z-10 opacity-30" src="https://storage.googleapis.com/a1aa/image/20b21d3f-7e43-4b68-7e10-99e90083430a.jpg" />
+  
+  <h1 class="font-extrabold text-2xl mb-4">My Music</h1>
+  <a href="#" class="text-blue-400 underline mb-6 inline-block">Home</a>
+
+  <form class="mb-6 max-w-md" role="search" aria-label="Search music tracks">
+    <label for="search" class="sr-only">Search music</label>
+    <input 
+      type="search" 
+      id="search" 
+      name="search" 
+      placeholder="Search music..." 
+      class="w-full rounded-md border border-gray-600 bg-gray-800 px-4 py-2 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-400"
+    />
+  </form>
+
+  <h2 class="font-extrabold text-xl mb-2">
+    <a href="#" class="text-blue-400 underline">Sample Music Track</a>
+  </h2>
+  <p class="mb-2">Released on April 27, 2024</p>
+  <p class="mb-6">This is a sample music track to demonstrate the music website structure.</p>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mb-6">
+    <video controls class="w-full bg-black" aria-label="Sample music video showing a live performance">
+      <source src="https://placehold.co/640x360/mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <audio controls class="w-full self-center bg-black" aria-label="Sample audio track of music">
+      <source src="https://placehold.co/400x50/mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+
+  <footer class="text-sm text-gray-300">
+    © 2024 My Music. All rights reserved.
+  </footer>
+</body>
+</html>
