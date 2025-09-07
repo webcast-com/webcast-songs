@@ -8,11 +8,58 @@
 <body class="relative min-h-screen bg-gray-900 text-white p-4">
   <img alt="Abstract music-themed background with dark tones and light effects" class="fixed inset-0 w-full h-full object-cover -z-10 opacity-30" src="https://storage.googleapis.com/a1aa/image/20b21d3f-7e43-4b68-7e10-99e90083430a.jpg" />
   
-  <!-- Navigation -->
-  <nav class="flex justify-between items-center mb-8">
-    <h1 class="font-extrabold text-2xl">My Music</h1>
-    <a href="#" class="text-blue-400 hover:text-blue-300 transition-colors">Home</a>
-  </nav>
+  <!-- Enhanced Header -->
+  <header class="relative z-10 bg-black/20 backdrop-blur-md border-b border-white/10 mb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <!-- Logo -->
+        <div class="flex items-center space-x-3">
+          <div class="w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
+            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM15.657 6.343a1 1 0 011.414 0A9.972 9.972 0 0119 12a9.972 9.972 0 01-1.929 5.657 1 1 0 11-1.414-1.414A7.971 7.971 0 0017 12c0-1.594-.471-3.078-1.343-4.243a1 1 0 010-1.414zm-2.829 2.828a1 1 0 011.415 0A5.983 5.983 0 0115 12a5.983 5.983 0 01-.757 2.829 1 1 0 11-1.415-1.414A3.987 3.987 0 0013 12a3.987 3.987 0 00-.172-1.415 1 1 0 010-1.414z" clip-rule="evenodd"></path>
+            </svg>
+          </div>
+          <h1 class="font-extrabold text-2xl bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+            My Music
+          </h1>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex items-center space-x-8">
+          <a href="#" class="text-white hover:text-blue-400 transition-colors duration-200 font-medium">Home</a>
+          <a href="#" class="text-gray-300 hover:text-blue-400 transition-colors duration-200 font-medium">Discover</a>
+          <a href="#" class="text-gray-300 hover:text-blue-400 transition-colors duration-200 font-medium">Playlists</a>
+          <a href="#" class="text-gray-300 hover:text-blue-400 transition-colors duration-200 font-medium">Artists</a>
+          <a href="#" class="text-gray-300 hover:text-blue-400 transition-colors duration-200 font-medium">About</a>
+        </nav>
+
+        <!-- User Actions -->
+        <div class="flex items-center space-x-4">
+          <!-- Search Button -->
+          <button class="p-2 text-gray-300 hover:text-white hover:bg-white/10 rounded-lg transition-all duration-200">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+            </svg>
+          </button>
+          
+          <!-- Profile Button -->
+          <button class="flex items-center space-x-2 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 px-4 py-2 rounded-full transition-all duration-200 transform hover:scale-105">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path>
+            </svg>
+            <span class="text-sm font-medium">Login</span>
+          </button>
+
+          <!-- Mobile Menu Button -->
+          <button class="md:hidden p-2 text-gray-300 hover:text-white hover:bg-white/10 rounded-lg transition-all duration-200">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
 
   <!-- Hero Section -->
   <section class="text-center py-20 mb-16">
