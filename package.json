@@ -1,0 +1,15 @@
+{
+  "name": "webcast-songs",
+  "version": "1.0.0",
+  "description": "A music website with audio and video content",
+  "main": "index.html",
+  "scripts": {
+    "build": "echo 'Build complete - static files ready'",
+    "start": "echo 'Starting static server...' && python3 -m http.server 3000 2>/dev/null || python -m http.server 3000 2>/dev/null || echo 'Python not available, serve files manually'",
+    "dev": "npm run start"
+  },
+  "keywords": ["music", "website", "audio", "video"],
+  "author": "",
+  "license": "ISC",
+  "type": "module"
+}
