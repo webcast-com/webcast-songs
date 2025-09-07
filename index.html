@@ -8,8 +8,31 @@
 <body class="relative min-h-screen bg-gray-900 text-white p-4">
   <img alt="Abstract music-themed background with dark tones and light effects" class="fixed inset-0 w-full h-full object-cover -z-10 opacity-30" src="https://storage.googleapis.com/a1aa/image/20b21d3f-7e43-4b68-7e10-99e90083430a.jpg" />
   
-  <h1 class="font-extrabold text-2xl mb-4">My Music</h1>
-  <a href="#" class="text-blue-400 underline mb-6 inline-block">Home</a>
+  <!-- Navigation -->
+  <nav class="flex justify-between items-center mb-8">
+    <h1 class="font-extrabold text-2xl">My Music</h1>
+    <a href="#" class="text-blue-400 hover:text-blue-300 transition-colors">Home</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="text-center py-20 mb-16">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-5xl md:text-7xl font-extrabold mb-6 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+        Feel the Beat
+      </h2>
+      <p class="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed">
+        Discover amazing music that moves your soul. Experience the rhythm, embrace the melody.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <button class="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
+          Start Listening
+        </button>
+        <button class="border-2 border-white/30 hover:border-white/50 px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:bg-white/10">
+          Browse Tracks
+        </button>
+      </div>
+    </div>
+  </section>
 
   <form class="mb-6 max-w-md" role="search" aria-label="Search music tracks">
     <label for="search" class="sr-only">Search music</label>
